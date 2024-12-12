@@ -1,0 +1,110 @@
+h1::first-letter {
+    font-size: 2em;
+    color: blue;
+}
+.quote {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+    border-left: 4px solid #ccc;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+.quote:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-shadow:hover {
+    box-shadow: 0 9px 13px rgba(242, 196, 13, 0.2);
+    border-color: white;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 2em;
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.quote::first-letter {
+    font-size: 2.5em;
+    color: #007acc;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.quote::selection {
+    background-color: #11cc00;
+    color: white;
+}
+.animated-background {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://kartinki.pibig.info/uploads/posts/2023-04/thumbs/1681979727_kartinki-pibig-info-p-fantasticheskie-kartinki-v-stile-fentezi-a-49.jpg');
+    background-size: 100%;
+    background-position: 0 0;
+    animation: moveBackground 5s linear infinite;
+    align-items: center;
+    display: flex;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+.animation-box {
+    padding: 15px;
+    border-radius: 190px;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    border-color: whitesmoke;
+    background-color: #1795b8;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated-button:hover {
+    border-color: #007acc;
+    box-shadow: 0 0 8px rgba(0, 122, 204, 0.6);
+    border-width: 3px;
+}
+.round-button {
+    width: 50px;            
+    height: 50px;
+    background-color: #007acc; 
+    color: white;      
+    border-radius: 50%;     
+    font-size: 10px;        
+    cursor: pointer;          
+    display: flex;          
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease; 
+    border-color: white;
+}
+
+.round-button:hover {
+border: bold 5cm;
+border-width: 5px;
+border-color: #11cc00;
+}
